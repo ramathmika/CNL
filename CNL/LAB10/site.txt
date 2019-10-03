@@ -1,0 +1,1 @@
+https://trungtm.wordpress.com/2007/07/03/how-to-measure-packet-loss-rate-jitter-and-end-to-end-delay-for-udp-based-applications/
