@@ -1,0 +1,27 @@
+Router
+conf t
+inter f0/0
+ip address 192.168.10.1 255.255.255.240
+no shutdown
+exit
+
+inter f0/0.2
+encapsulation dot1q 2
+ip address 192.168.1.65 255.255.255.192
+no shutdown
+exit
+
+inter f0/0.10
+encapsulation dot1q 10
+ip address 192.168.1.129 255.255.255.224
+no shutdown
+exit
+
+PC1
+ip 192.168.1.66 255.255.255.192 192.168.1.65
+
+PC2
+ip 192.168.1.67 255.255.255.192 192.168.1.65
+
+PC3
+ip 192.168.1.130 255.255.255.224 192.168.1.129
